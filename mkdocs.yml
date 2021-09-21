@@ -1,0 +1,83 @@
+# Project Information
+site_name: CUC MCL wiki
+site_url: https://github.com/CUC-MCL/MCL-wiki
+strict: true
+
+# Repository
+repo_name: 'CUC-MCL/mcl-wiki'
+repo_url: 'https://github.com/CUC-MCL/MCL-wiki'
+
+
+
+# Contents
+nav:
+  - 首页:
+      - 主页: index.md
+  
+## Theme
+theme:
+  name: 'material'
+  language: 'zh'
+  palette:
+    primary: 'Indigo'
+    accent: 'red'
+  include_search_page: false
+  search_index_only: true
+  favicon: 'favicon.ico'
+
+  logo:
+    icon: 'school'
+  feature:
+    tabs: true
+  font:
+    text: 'Fira Sans'
+    code: 'Fira Mono'
+
+# Customization
+extra:
+  search:
+    language: 'jp'
+  pagetime: 'on'
+  manifest: 'manifest.webmanifest'
+  githash: ''
+
+
+extra_javascript:
+  - '_static/js/extra.js?v=16'
+  - 'https://cdnjs.loli.net/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML'
+
+extra_css:
+  - '_static/css/extra.css?v=12'
+
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+      linenums: true
+  - def_list
+  - footnotes
+  - meta
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.progressbar
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: math
+          class: arithmatex
+          format: !!python/name:pymdownx.arithmatex.fence_mathjax_format
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
