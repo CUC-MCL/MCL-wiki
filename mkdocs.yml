@@ -1,5 +1,5 @@
 # Project Information
-site_name: CUC MCL wiki
+site_name: CUC-MCL wiki
 site_url: https://github.com/CUC-MCL/MCL-wiki
 strict: true
 
@@ -13,14 +13,19 @@ repo_url: 'https://github.com/CUC-MCL/MCL-wiki'
 nav:
   - 首页:
       - 主页: index.md
+  - 成员风采: 
+      - 成员风采: construct.md
+  - 科研成果: 
+      - 科研成果: construct.md
+  - 其他: 
+      其他: construct.md
   
 ## Theme
 theme:
+  palette:
+    primary: 'Deep Purple'
   name: 'material'
   language: 'zh'
-  palette:
-    primary: 'Indigo'
-    accent: 'red'
   include_search_page: false
   search_index_only: true
   favicon: 'favicon.ico'
@@ -40,6 +45,9 @@ extra:
   pagetime: 'on'
   manifest: 'manifest.webmanifest'
   githash: ''
+  consent:
+    cookies:
+      analytics: Custom name
 
 
 extra_javascript:
