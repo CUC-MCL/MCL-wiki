@@ -14,7 +14,7 @@ script:
   - mkdocs build
 
 after_success:
-  - 'if [ "$TRAVIS_PULL_REQUEST" = "false" -a "$TRAVIS_BRANCH" = "master" ];then mkdocs gh-deploy --force --clean; fi'
+  - mkdocs gh-deploy --force --clean
 
 branches:
   only:
